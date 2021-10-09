@@ -1,0 +1,61 @@
+$theme_dark: #03045e;
+$theme_main: #0077b6;
+$theme_light: #90e0ef;
+$theme_bg: #caf0f8;
+
+nav.navbar {
+	background-color: $theme_light;
+	.navbar-brand{
+		color: $theme_main;
+		font-size: 2rem;
+		&:hover {
+			color: $theme_dark;
+		}
+	}
+}
+td {
+	width: 6rem;
+	height: 6rem;
+	max-width: 5rem;
+	max-height: 5rem;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid $theme_dark;
+	font-size: .7rem;
+	color: $theme_dark;
+	background-color: $theme_bg;
+	&:hover {
+		color: $theme_bg;
+		background-color: $theme_main;
+	}
+}
+td.selected {
+	color: $theme_bg;
+	background-color: $theme_main;
+}
+div.successList {
+	text-align: center;
+	margin: 0 auto;
+}
+p.textHighlight {
+	color: $theme_dark;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+p.gameResult {
+	text-align: center;
+	color: gold;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 2rem;
+}
+.rules {
+	margin-top: 4rem;
+	p {
+		text-align: center;
+		color: $theme_dark;
+		font-size: 1.2em;
+		font-weight: bold;
+		font-style: italic;
+	}
+}

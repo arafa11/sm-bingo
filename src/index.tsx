@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Provider } from "react-redux";
+import ReactNotification from 'react-notifications-component'
 import App from './App';
+import store from './redux/store';
+import "./assets/scss/styles.scss";
+import 'react-notifications-component/dist/theme.css'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
+    <ReactNotification />
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
